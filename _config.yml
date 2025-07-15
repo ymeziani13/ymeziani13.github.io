@@ -1,7 +1,6 @@
 title: Yasmine Meziani
-#logo
-description: PhD Student in Physics, Caltech
-#show_downloads: true
-remote_theme: Phlow/feeling-responsive
+baseurl: "/jekyll-serif-theme"
+url: "https://ymeziani13.github.io"
+remote_theme: zerostaticthemes/jekyll-serif-theme
 plugins:
   - jekyll-remote-theme
