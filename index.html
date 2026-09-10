@@ -279,50 +279,116 @@
 
 
     <!-- CONTACT -->
-    <section class="section contact" id="contact">
+<section class="section contact" id="contact">
 
-      <div class="section-label">
-        05 / CONTACT
-      </div>
+  <div class="section-label">
+    06 / CONTACT
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-intro">
 
       <h2>
         Get in touch.
       </h2>
 
       <p>
-        California Institute of Technology<br>
-        Pasadena, California
+        Interested in collaborating, discussing research,
+        inviting me to speak, or just getting in touch?
+        Send me a message below.
       </p>
 
-      <div class="contact-links">
+    </div>
 
-        <a href="mailto:YOUR_EMAIL">
-          Email
-        </a>
 
-        <a href="#">
-          Google Scholar
-        </a>
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/xppzkbdp"
+      method="POST"
+    >
 
-        <a href="https://github.com/ymeziani13">
-          GitHub
-        </a>
-
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+        >
       </div>
 
-    </section>
 
-  </main>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        >
+      </div>
 
 
-  <footer>
+      <div class="form-group">
+        <label for="reason">Reason for reaching out</label>
 
-    <p>
-      © 2026 Yasmine Meziani
-    </p>
+        <select
+          id="reason"
+          name="reason"
+          required
+        >
+          <option value="" disabled selected>
+            Select an option
+          </option>
 
-  </footer>
+          <option value="Research collaboration">
+            Research collaboration
+          </option>
 
-</body>
+          <option value="Speaking or presentation">
+            Speaking or presentation
+          </option>
 
-</html>
+          <option value="Student question">
+            Student question
+          </option>
+
+          <option value="Other">
+            Other
+          </option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label for="message">Message</label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="7"
+          required
+        ></textarea>
+      </div>
+
+
+      <!-- Simple spam protection -->
+      <input
+        type="text"
+        name="_gotcha"
+        style="display:none"
+        tabindex="-1"
+        autocomplete="off"
+      >
+
+
+      <button type="submit" class="button primary form-button">
+        Send message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
