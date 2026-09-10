@@ -254,10 +254,20 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   margin-top: 25px;
+  align-items: center;
 }
 
-.about-grid h2 {
-  margin: 0;
+.about-photo {
+  max-width: 360px;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 4px;
 }
 
 .about-text {
@@ -579,6 +589,10 @@ footer {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .about-photo {
+    max-width: 300px;
   }
 
   .research-grid {
