@@ -332,19 +332,19 @@ nav a:hover {
 
 .publication-with-image {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 28px;
   align-items: start;
-  padding: 26px 0;
+  padding: 30px 0;
 }
 
 .publication-thumb {
-  width: 64px;
+  width: 120px;
 }
 
 .publication-thumb img {
-  width: 64px;
-  height: 90px;
+  width: 120px;
+  height: 168px;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -586,17 +586,17 @@ footer {
   }
 
   .publication-with-image {
-    grid-template-columns: 52px minmax(0, 1fr);
-    gap: 14px;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 16px;
   }
 
   .publication-thumb,
   .publication-thumb img {
-    width: 52px;
+    width: 80px;
   }
 
   .publication-thumb img {
-    height: 73px;
+    height: 112px;
   }
 
   .publication-content h3,
